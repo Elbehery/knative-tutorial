@@ -12,7 +12,7 @@ if [ "$unamestr" == "Darwin" ];
 then
   minikube start -p "$PROFILE_NAME" \
   --memory="$MEMORY" \
-  --driver=hyperkit \
+  --driver=qemu \
   --cpus="$CPUS" \
   --kubernetes-version=v1.23.0 \
   --disk-size=50g \
